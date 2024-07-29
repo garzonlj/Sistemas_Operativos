@@ -11,21 +11,36 @@ Requerimientos:
 *********************************************************************/
 #include <stdio.h>
 
-/**funcion de bienvenida**/
+
+/** 
+ * Función: bienvenida
+ * Descripción: Muestra un mensaje de bienvenida en la consola.
+ */
 
 void bienvenida(){
   printf("hola mundo...+\n");
   printf("\t\t Bienvenidos a mi clase de sistemas operativos :) \n");
 }
 
-// funcion suma enteros
+/**
+ * Función: suma
+ * Descripción: Calcula la suma de dos números enteros y muestra el resultado.
+ * Parámetros:
+ *  - int num1: Primer número entero.
+ *  - int num2: Segundo número entero.
+ */
 
 void suma (int num1, int num2){
    int resultado = num1 + num2;
   printf("el resultado es: %d\n", resultado);
 }
 
-//funcion area
+/**
+ * Función: area
+ * Descripción: Calcula el área de una circunferencia dado su radio.
+ * Parámetros:
+ *  - float radio: Radio de la circunferencia.
+ */
 
 void area (float radio){
   
