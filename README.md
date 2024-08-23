@@ -8,3 +8,6 @@
 
 - `Cap01`: ejercicios de introducción a C
 - `Memoria`: ejercios utilizando malloc, calloc, realloc
+
+### Lenguaje utilizado
+<img src="http://img.shields.io/badge/-Java-F89820?style=flat&logo=java&logoColor=white">
