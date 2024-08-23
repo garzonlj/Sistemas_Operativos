@@ -7,4 +7,5 @@
 
 ## :hammer:Funcionalidades del proyecto
 
-- `Cap01`: ejercicios de introducción a C -`Memoria`: ejercios utilizando malloc, calloc, realloc
+- `Cap01`: ejercicios de introducción a C
+- `Memoria`: ejercios utilizando malloc, calloc, realloc
