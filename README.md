@@ -10,4 +10,4 @@
 - `Memoria`: ejercios utilizando malloc, calloc, realloc
 
 ### Lenguaje utilizado
-<img src="http://img.shields.io/badge/-Java-F89820?style=flat&logo=java&logoColor=white">
+<img src="https://img.shields.io/badge/-C%20&%20C++-659ad2?style=flat&logo=c%2B%2B&logoColor=ffffff">
