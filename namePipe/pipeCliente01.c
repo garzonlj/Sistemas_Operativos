@@ -1,5 +1,5 @@
 /********************************************
-Fecha: 24 de septiembre del 2014
+Fecha: 24 de septiembre del 2024
 Autor: Laura Garzon
 Materia: Sistemas Operativos
 Tema: uso de name Pipes unidireccionales
