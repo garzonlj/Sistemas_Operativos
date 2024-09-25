@@ -1,7 +1,7 @@
 # Uso de Named Pipes Unidireccionales
 
 ## Fecha
-24 de septiembre del 2014
+24 de septiembre del 2024
 
 ## Autor
 Laura Garzon
