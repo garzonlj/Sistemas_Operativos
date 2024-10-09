@@ -30,5 +30,5 @@ Este proyecto implementa un sistema básico de comunicación bidireccional clien
 Para compilar los archivos, utiliza un compilador como `gcc`. Ejemplo:
 
 ```bash
-gcc serverBidireccional.c 
-$ gcc clienteBidireccional.c -o c
+gcc serverBidireccional.c -o s
+gcc clienteBidireccional.c -o c
