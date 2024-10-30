@@ -10,6 +10,7 @@
 - `Memoria`: ejercios utilizando malloc, calloc, realloc
 - `name Pipes`: ejemplo de comunicacion cliente servidor con name pipes
 - `name Pipes & fork`: ejemplo de comunicacion cliente servidor bidireccional
+- `Maquinas virtuales`: laboratorio con maquinas virtuales base linux.
 
 ### Lenguaje utilizado
 <img src="https://img.shields.io/badge/-C%20&%20C++-659ad2?style=flat&logo=c%2B%2B&logoColor=ffffff">
