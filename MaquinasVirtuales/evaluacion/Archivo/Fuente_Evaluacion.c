@@ -1,6 +1,6 @@
 /**************************************************************
 		Pontificia Universidad Javeriana
-	Autor: J. Corredor
+	Autor: laura juliana garzon arias
 	Fecha: Febrero 2024
 	Materia: Sistemas Operativos
 	Tema: Taller de Evaluación de Rendimiento
