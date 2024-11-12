@@ -1,0 +1,3 @@
+P: El presidente dio declaraciones.
+S: Candyman fue robado por un motorizado.
+C: El telescopio captó un nuevo exoplaneta.

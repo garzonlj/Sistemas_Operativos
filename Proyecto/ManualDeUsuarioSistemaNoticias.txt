@@ -1,0 +1,65 @@
+Manual de Usuario: Sistema de Noticias con Pipes
+
+1. Compilación del código
+Usa make para compilar los archivos:
+
+$ make
+
+Esto creanlos ejecutables necesarios para los procesos: publicador, suscriptor, y sistema.
+
+2. Ejecutar el Sistema de Comunicación
+Este es el proceso que gestiona las suscripciones y distribuye las noticias a los suscriptores.
+
+Para ejecutar el sistema de comunicación, ingresa en la terminal:
+
+$ ./sistema -p pipePSC -s pipeSSC -t 5
+
+-p: Pipe para recibir noticias del publicador (en este caso, pipePSC).
+-s: Pipe para recibir suscripciones de los suscriptores (en este caso, pipeSSC).
+-t: Tiempo en segundos que el sistema de comunicación espera entre cada operación (5 segundos en este ejemplo).
+
+
+3. Suscribirse a las Noticias
+El suscriptor puede elegir las categorías de noticias que quiere recibir.
+
+Para ejecutar el suscriptor, usa el siguiente comando:
+
+$ ./suscriptor -s pipeSSC
+
+-s: Pipe para enviar la suscripción al sistema de comunicación (en este caso, pipeSSC).
+Cuando ejecutes este comando, se te pedirá que ingreses las categorías de las noticias que deseas recibir (por ejemplo, A, C para recibir noticias de Arte y Ciencia).
+
+4. Enviar Noticias desde el Publicador
+El publicador toma un archivo de noticias y envía cada noticia al sistema de comunicación.
+
+Para ejecutar el publicador, usa el siguiente comando:
+
+$ ./publicador -p pipePSC -f noticias.txt -t 2
+
+-p: Pipe para enviar las noticias al sistema de comunicación (en este caso, pipePSC).
+-f: Archivo de texto que contiene las noticias. Cada línea del archivo es una noticia.
+-t: Tiempo en segundos que el publicador espera entre cada noticia enviada.
+
+5. Ejemplo de Ejecución
+Sigue estos pasos para ejecutar el sistema completo:
+
+Abre tres terminales.
+
+En la Terminal 1, ejecuta el sistema de comunicación:
+$ ./sistema -p pipePSC -s pipeSSC -t 5
+
+En la Terminal 2, ejecuta el suscriptor:
+$ ./suscriptor -s pipeSSC
+
+Ingrese las categorías deseadas (por ejemplo, A, C).
+
+En la Terminal 3, ejecuta el publicador:
+$ ./publicador -p pipePSC -f noticias.txt -t 2
+
+El suscriptor comenzará a recibir las noticias que coincidan con las categorías seleccionadas. El sistema de comunicación distribuirá las noticias enviadas por el publicador.
+
+6. Detener el Sistema
+Una vez terminado el envío de noticias a los suscriptores, el sistema de comunicación esperará el tiempo que usted haya indicado a que se publiquen nuevas noticias. Si dicho tiempo de espera es superado, se enviará una notificación al suscriptor y se cerrará la comunicación tanto del SC como del suscriptor y ambos programas finalizarán.
+
+Para detener cualquiera de los procesos en ejecución, presiona CTRL + C en la terminal donde se está ejecutando el proceso (sistema de comunicación, publicador o suscriptor).
+Esto finalizará el proceso de forma manual.
